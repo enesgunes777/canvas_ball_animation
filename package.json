@@ -1,0 +1,48 @@
+{
+	"name": "canvas_ball_animation",
+	"private": true,
+	"version": "0.1.0",
+	"type": "module",
+	"description": "🌀 canvas ball animation playground app",
+	"author": "chan9yu <wry5533@gmail.com>",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/chan9yu/canvas_ball_animation"
+	},
+	"lint-staged": {
+		"**/*.{ts,tsx}": [
+			"eslint --fix",
+			"prettier --write"
+		]
+	},
+	"config": {
+		"commitizen": {
+			"path": "cz-conventional-changelog"
+		}
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"commit": "pnpm git-cz",
+		"prepare": "husky install",
+		"husky:permission": "chmod +x .husky/*"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^18.4.3",
+		"@commitlint/config-conventional": "^18.4.3",
+		"@typescript-eslint/eslint-plugin": "^6.15.0",
+		"@typescript-eslint/parser": "^6.15.0",
+		"commitizen": "^4.3.0",
+		"conventional-changelog-conventionalcommits": "^7.0.2",
+		"eslint": "^8.56.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-prettier": "^5.1.2",
+		"husky": "^8.0.3",
+		"lint-staged": "^15.2.0",
+		"prettier": "^3.1.1",
+		"sass": "^1.69.5",
+		"typescript": "^5.3.3",
+		"vite": "^5.0.8"
+	}
+}
